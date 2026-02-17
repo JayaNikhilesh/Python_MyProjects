@@ -42,7 +42,7 @@ if chosen == player_1 :
 
 else:
     while pull > 0:
-        print(f"The {player_2} has shot the bullet")
+        print(f"The {player_2} has shot the bullet ")
         pull = pull - 1
 
         if pull == 0:
