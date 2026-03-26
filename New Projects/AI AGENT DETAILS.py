@@ -77,8 +77,23 @@ for pos in range(1, n):
 print("Number of valid arrangements:", dp[n-1][r])
 '''
 
-x = 3
-y = 5
-b = 3
-m = x < y < b
-print(m)
+'''
+def merge(a,b):
+    i=j=0; res=[]
+    while i<len(a) and j<len(b):
+        if a[i]<b[j]:
+            res.append(a[i]); i+=1
+        else:
+            res.append(b[j]); j+=1
+    res.extend(a[i:]); res.extend(b[j:])
+    return res
+
+a = [3, 4, 5, 8]
+b = [2, 5, 7, 9]
+
+n = merge(a, b)
+print(n)
+'''
+
+c = (x for x in range(5))
+print(c)
