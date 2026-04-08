@@ -4,8 +4,13 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/.venv1" />
+      <excludeFolder url="file://$MODULE_DIR$/v_ai_1" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/AI Agents/.v_AI_1" />
+      <excludeFolder url="file://$MODULE_DIR$/AI Agents/.v_ai_1" />
+      <excludeFolder url="file://$MODULE_DIR$/AI Agents/New/.v_ai_1" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (Python My Projects)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.13 (Python My Projects) (7)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
