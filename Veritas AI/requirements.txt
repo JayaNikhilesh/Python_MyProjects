@@ -1,0 +1,6 @@
+python-dotenv       # for load_dotenv() and environment variables
+crewai              # for Agent, Task, Crew, Process orchestration
+crewai-tools        # for EXASearchTool and other built-in tools
+openai              # for LLM access via OpenRouter
+requests            # used internally by tools for API calls
+pydantic            # used internally by CrewAI for validation
