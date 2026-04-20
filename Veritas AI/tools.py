@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-EXA_API_KEY = os.getenv("EXA_API_KEY")
-EXASearchTool=EXASearchTool()
+EXASearchTool = EXASearchTool(api_key=os.getenv("EXA_API"))
+
 
 #Create a tool for printing the data in ba JSON file
 
