@@ -1,7 +1,6 @@
 import os
 
 from crewai import Task
-from openpyxl.styles.builtins import output
 
 from agents import researcher, writer, editor
 
@@ -21,6 +20,7 @@ researcher_task=Task(
     7.The articles should have data in them
     8.Get the latest keywords or articles on the {topic}
     9.Only get the old data if the user specify
+    10.If the user asks for any links you should give those links on the {topic}
     
     Focus on finding the keywords and {topic} from EXASearchTool""",
     expected_output="""GIve me the list of keywords and articles from the {topic}:
@@ -49,6 +49,7 @@ writer_task = Task(
     6.The data should be accessible
     7.There should not be any errors in the articles
     8.Write the blogs on only latest information on the {topic} except the user specify
+    9.If there are any links in the data, then you should keep them safe 
 
     Focus on creating the blog with the top trending keywords or top articles from the {topic}""",
     expected_output="""GIve me the list of keywords and articles from the {topic}:
@@ -79,6 +80,8 @@ editor_task = Task(
     7.The links should be opened and should contain information about the {topic}
     8.The links opened should not contain errors or data not found on the {topic}
     9.The blogs should be created on the latest news on that {topic}
+    10.If there are any links, give them at the links at the last of page and what we will get on that link
+    11.Only give the result from the past 3 days if the user is asked for jobs 
 
     Focus on updating and refining the data and by increasing the keyword density, adding meta data""",
     expected_output="""GIve me the best blog from that content with more keyword density, scoring readability:
